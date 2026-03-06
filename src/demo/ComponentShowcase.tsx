@@ -1,36 +1,16 @@
-import Button from "../components/Button.js";
+import Button from '../components/Button.js';
+import Field from '../components/Field.js';
 
 const App = () => {
   return (
     <div className="todo">
       <h1 className="todo__title">To Do List</h1>
       <form className="todo__form">
-        <div className="todo__field field">
-          <label className="field__label" htmlFor="new-task">
-            New task
-          </label>
-          <input
-            className="field__input"
-            id="new-task"
-            placeholder=" "
-            autoComplete="off"
-          />
-        </div>
+        <Field id="new-task" label="Введите текст" type="text" />
         <Button />
       </form>
       <form className="todo__form">
-        <div className="todo__field field">
-          <label className="field__label" htmlFor="search-task">
-            Search task
-          </label>
-          <input
-            className="field__input"
-            id="search-task"
-            placeholder=" "
-            autoComplete="off"
-            type="search"
-          />
-        </div>
+        <Field id="search-task" label="Поиск" type="search" />
       </form>
       <div className="todo__info">
         <div className="todo__total-tasks">

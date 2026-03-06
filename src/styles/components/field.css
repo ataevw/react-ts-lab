@@ -4,7 +4,7 @@
   &:has(.field__input:not(:placeholder-shown)) .field__label {
     color: var(--color-black);
     scale: 0.7;
-    translate: -1.75em -2.6em;
+    translate: -1.05em -2.6em;
   }
 }
 
@@ -14,6 +14,7 @@
   left: 17px;
   color: var(--color-gray-3);
   translate: 0 -50%;
+  transform-origin: left center; 
 }
 
 .field__input {
