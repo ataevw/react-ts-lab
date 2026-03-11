@@ -1,0 +1,83 @@
+#root {
+  width: 100%;
+}
+
+/* Базовые глобальные стили проекта */
+html {
+  font-size: 10px;
+  color: var(--color-primary);
+  line-height: 1.2;
+  min-width: 32rem;
+}
+
+body {
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 3.2rem;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-body);
+}
+
+input,
+label,
+button {
+  transition-duration: var(--transition-duration);
+}
+
+:focus-visible {
+  outline: 0.2rem dashed var(--color-black);
+  outline-offset: 0.4rem;
+  transition-duration: 0s !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-style: normal;
+  line-height: 1;
+}
+
+h1,
+.h1 {
+  font-size: 4rem;
+}
+h2,
+.h2 {
+  font-size: 3.6rem;
+}
+h3,
+.h3 {
+  font-size: 3.2rem;
+}
+h4,
+.h4 {
+  font-size: 2.8rem;
+}
+h5,
+.h5 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+h6,
+.h6 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+p,
+ul,
+ol {
+  padding-bottom: 1.6rem;
+}
