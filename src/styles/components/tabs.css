@@ -1,0 +1,49 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 0.4rem;
+
+  & button {
+    position: relative;
+    color: var(--color-primary);
+    /* mix-blend-mode: exclusion; текст смешивается с индикатором */
+    background-color: transparent;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-weight: 500;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  & button:hover {
+    color: var(--color-gray-4);
+  }
+}
+
+button.tab_active,
+button.tab_active:hover {
+  color: var(--color-white);
+}
+
+.indicator {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+  z-index: 0;
+  transition-property: all; /* transition-all */
+  transition-duration: 300ms;
+}
+
+.tabs__content {
+  padding: 2.4rem;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+}

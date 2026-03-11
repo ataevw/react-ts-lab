@@ -1,14 +1,17 @@
 import Button from '../components/Button.js';
 import Field from '../components/Field.js';
+import Tabs from '../components/Tabs.js';
 
 const App = () => {
   return (
     <div className="todo">
-      <h1 className="todo__title">To Do List</h1>
+      <h1>Component Library</h1>
       <form className="todo__form">
         <Field id="new-task" label="Введите текст" type="text" />
         <Button />
       </form>
+      <Tabs />
+
       <form className="todo__form">
         <Field id="search-task" label="Поиск" type="search" />
       </form>
