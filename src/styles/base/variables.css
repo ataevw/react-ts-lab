@@ -1,25 +1,51 @@
 :root {
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-black: #000000;
 
-  --color-dark-1: #1E1E1E;
-  --color-dark-2: #2C2C2C;
+  --color-dark-1: #1e1e1e;
+  --color-dark-2: #2c2c2c;
 
-  --color-gray-1: #F5F5F5;
-  --color-gray-2: #D9D9D9;
-  --color-gray-3: #B3B3B3;
+  --color-gray-1: #f5f5f5;
+  --color-gray-2: #d9d9d9;
+  --color-gray-3: #b3b3b3;
   --color-gray-4: #757575;
-  
-  --color-primary: var(--color-dark-1);
+
+  --color-default: var(--color-dark-1);
+  --color-primary: #7b5efc;
+  --color-secondary: #5e9cfb;
+  --color-warning: #ffa65c;
+  --color-error: #ff6b6b;
+
+  /* Hover */
+  --color-primary-hover: #6747e0;
+  --color-secondary-hover: #4a8de5;
+  --color-warning-hover: #e5944b;
+  --color-error-hover: #e05252;
+
+  /* Active */
+  --color-primary-active: #5838c9;
+  --color-secondary-active: #3971c7;
+  --color-warning-active: #cc7f3e;
+  --color-error-active: #c04848;
+
   --bg-body: var(--color-gray-1);
   --bg-main: var(--color-white);
 
   --border: 1px solid var(--color-gray-2);
-  --border-radius: .8rem;
+  --border-radius: 0.8rem;
 
-  --box-shadow: 0 .4rem .4rem -.4rem rgba(12, 12, 13, 0.05), 0 1.6rem 3.2rem -.4rem rgba(12, 12, 13, 0.1);
+  --box-shadow:
+    0 0.4rem 0.4rem -0.4rem rgba(12, 12, 13, 0.05),
+    0 1.6rem 3.2rem -0.4rem rgba(12, 12, 13, 0.1);
 
   --input-height: 4rem;
+  --btn-height: var(--input-height);
+
+  --input-height-small: 2.8rem;
+  --btn-height-small: var(--input-height-small);
+
+  --input-height-big: 4.8rem;
+  --btn-height-big: var(--input-height-big);
 
   --transition-duration: 0.2s;
 }

@@ -7,7 +7,7 @@
 
   & button {
     position: relative;
-    color: var(--color-primary);
+    color: var(--color-default);
     /* mix-blend-mode: exclusion; текст смешивается с индикатором */
     background-color: transparent;
     border: none;
@@ -34,7 +34,7 @@ button.tab_active:hover {
 .indicator {
   position: absolute;
   inset: 0;
-  background-color: var(--color-primary);
+  background-color: var(--color-default);
   border-radius: var(--border-radius);
   z-index: 0;
   transition-property: all; /* transition-all */
@@ -44,6 +44,6 @@ button.tab_active:hover {
 .tabs__content {
   padding: 2.4rem;
   color: var(--color-white);
-  background-color: var(--color-primary);
+  background-color: var(--color-default);
   border-radius: var(--border-radius);
 }

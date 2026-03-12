@@ -1,0 +1,9 @@
+.section {
+  width: 100%;
+  padding: 3.2rem;
+  background-color: var(--bg-main);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 3.2rem;
+}

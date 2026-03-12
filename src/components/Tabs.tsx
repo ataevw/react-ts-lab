@@ -9,6 +9,8 @@ const tabs = [
 
 type TabId = (typeof tabs)[number]['id'];
 
+// Record<Ключ, Значение> 
+// ключи — это TabId, а значения — любой React-контент.
 const tabContent: Record<TabId, React.ReactNode> = {
   tab1: (
     <>
