@@ -13,3 +13,4 @@ import './components/todo-item.css';
 import './components/modal.css';
 import './components/tabs.css';
 import './components/content.css';
+import './components/demo.css';

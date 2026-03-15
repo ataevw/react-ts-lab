@@ -1,4 +1,4 @@
-import Todo from '../components/Todo.js';
+import Todo from '../components/Todo/Todo.js';
 
 const DemoTodoPage = () => {
   return (

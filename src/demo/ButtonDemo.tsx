@@ -1,29 +1,31 @@
-import Button from '../components/Button.js';
+import Button from '../components/Button/Button.js';
+
+const sizes = ['small', 'default', 'big'] as const;
+
+const variants = [
+  { label: 'Default', variant: 'default' },
+  { label: 'Primary', variant: 'primary' },
+  { label: 'Secondary', variant: 'secondary' },
+  { label: 'Warning', variant: 'warning' },
+  { label: 'Error', variant: 'error' },
+] as const;
 
 const ButtonDemo = () => {
   return (
     <>
-      <div className="button__list">
-        <Button size="small">Small</Button>
-        <Button size="small" variant="primary">Primary</Button>
-        <Button size="small" variant="secondary">Secondary</Button>
-        <Button size="small" variant="warning">Warning</Button>
-        <Button size="small" variant="error">Error</Button>
-      </div>
-      <div className="button__list">
-        <Button>Default</Button>
-        <Button variant="primary">Primary</Button>
-        <Button variant="secondary">Secondary</Button>
-        <Button variant="warning">Warning</Button>
-        <Button variant="error">Error</Button>
-      </div>
-      <div className="button__list">
-        <Button size="big">Big</Button>
-        <Button size="big" variant="primary">Primary</Button>
-        <Button size="big" variant="secondary">Secondary</Button>
-        <Button size="big" variant="warning">Warning</Button>
-        <Button size="big" variant="error">Error</Button>
-      </div>
+      {sizes.map((size) => (
+        <div className="button__list" key={size ?? 'default'}>
+          {variants.map(({ label, variant }) => (
+            <Button
+              key={label}
+              {...(size !== 'default' ? { size } : {})}
+              {...(variant !== 'default' ? { variant } : {})}
+            >
+              {label}
+            </Button>
+          ))}
+        </div>
+      ))}
     </>
   );
 };

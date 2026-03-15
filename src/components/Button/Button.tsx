@@ -13,12 +13,12 @@ const Button = ({
   type = 'button',
   ...props
 }: ButtonProps) => {
-
   const sizeClass = size ? ` button_${size}` : ''; // так как может не быть undefined
   const variantClass = variant ? ` button_${variant}` : '';
 
   return (
     <button
+      aria-label={`Aria ${children}`}
       type={type}
       className={`button${sizeClass}${variantClass}`}
       {...props}

@@ -1,5 +1,5 @@
 .button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: var(--input-height);
@@ -61,11 +61,4 @@
   &:hover {
     color: var(--color-error);
   }
-}
-
-.button__list {
-  display: flex;
-  align-items: flex-end;
-  column-gap: 0.8rem;
-  margin-bottom: 1.6rem;
 }

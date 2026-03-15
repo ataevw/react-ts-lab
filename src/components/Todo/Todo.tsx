@@ -1,16 +1,19 @@
-import Button from './Button.js';
-import Field from './Field.js';
-import Tabs from './Tabs.js';
+import Button from '../Button/Button.js';
+import Field from '../Field.js';
+import Tabs from '../Tabs.js';
 
 const Todo = () => {
   return (
     <div className="todo">
       <form className="todo__form">
-        <Field id="new-task" label="Введите текст" type="text" />
+        <Field
+          id="new-task"
+          label="Введите текст"
+          type="text"
+          className="todo__field"
+        />
         <Button>Add</Button>
       </form>
-      <Tabs />
-
       <form className="todo__form">
         <Field id="search-task" label="Поиск" type="search" />
       </form>

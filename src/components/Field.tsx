@@ -1,15 +1,24 @@
-interface FieldProps {
-    id: string,
-    label: string,
-    type: string,
-    placeholder?: string;
-}
+type FieldProps = React.ComponentProps<'input'> & {
+  id: string;
+  label: string;
+  type: string;
+  placeholder?: string;
+  className?: string;
+};
 
-const Field = (props: FieldProps) => {
-  const { id, label, type, placeholder } = props;
+const Field = ({
+  id,
+  label,
+  type,
+  placeholder,
+  className,
+  ...props
+}: FieldProps) => {
+
+  const classes = className ? className : ''; // так как может не быть undefined
 
   return (
-    <div className="todo__field field">
+    <div className={`field ${classes}`}>
       <label className="field__label" htmlFor={id}>
         {label}
       </label>
@@ -19,6 +28,7 @@ const Field = (props: FieldProps) => {
         type={type}
         placeholder={placeholder ?? ` `}
         autoComplete="off"
+        {...props}
       />
     </div>
   );

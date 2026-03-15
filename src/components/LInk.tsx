@@ -7,7 +7,7 @@ type LinkProps = {
 
 const Link = ({ to, children }: LinkProps) => {
   const handleClick = (e: React.MouseEvent) => {
-    e.preventDefault(); // предотвращаем перезагрузку.  
+    e.preventDefault(); // предотвращаем перезагрузку
     window.history.pushState(null, '', to); // меняем URL
     window.dispatchEvent(new Event('popstate')); // уведомляем роутер
   };

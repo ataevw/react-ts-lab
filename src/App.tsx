@@ -5,7 +5,7 @@ import Router from './Router.js';
 function App() {
   const routes = {
     '/': DemoPage,
-    '/todo': DemoTodoPage,
+    '/todo/': DemoTodoPage,
     '*': () => <div>404 Страница не найдена!</div>,
   };
 

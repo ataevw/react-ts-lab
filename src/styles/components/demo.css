@@ -1,0 +1,12 @@
+.button__list {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.field__list {
+  display: flex;
+  flex-flow: column;
+  row-gap: 1.6rem;
+}

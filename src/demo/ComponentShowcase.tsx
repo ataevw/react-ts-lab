@@ -1,7 +1,7 @@
-import Field from '../components/Field.js';
 import Tabs from '../components/Tabs.js';
 import ButtonDemo from './ButtonDemo.js';
 import ComponentSection from './ComponentSection.js';
+import FieldDemo from './FieldDemo.js';
 
 const ComponentShowcase = () => {
   return (
@@ -11,7 +11,7 @@ const ComponentShowcase = () => {
         <ButtonDemo />
       </ComponentSection>
       <ComponentSection title="Поля ввода">
-        <Field id="new-task" label="Введите текст" type="text" />
+        <FieldDemo />
       </ComponentSection>
       <ComponentSection title="Табы">
         <Tabs />
